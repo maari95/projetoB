@@ -1,0 +1,100 @@
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    width: 100%;
+}
+
+section img{
+    border-radius: 10px;
+}
+
+.futuros-cursos {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-group img {
+    width: 370px;
+    height: 260px;
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    margin: 10px;
+}
+
+button.red {
+    font-size: 20px;
+    padding: 12px 100px;
+    border: none;
+    border-radius: 5px;
+}
+
+.title {
+    font-size: 35px;
+    padding: 5px;
+    border-bottom: 2px solid #1450A3;
+    text-align: center;
+}
+
+.last-post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.card-group-post {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(48%, auto));
+    gap: 20px;
+    margin-bottom: 50px ;
+}
+
+.card-post{
+    position: relative;
+}
+
+.card-post>span {
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+    padding: 7px 15px;
+}

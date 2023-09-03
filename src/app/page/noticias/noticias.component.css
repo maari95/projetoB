@@ -1,0 +1,43 @@
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.not{
+    width: 65%;
+}
+
+.nt{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.info{
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.search{
+    top: 100px;
+    right: 30px;
+    position: fixed;
+}
+
+.search input{
+    width: 270px;
+    height: 35px;
+    outline: none;
+}
+
+button{
+    margin-left: 10px;
+    border-radius: 5px;
+    height: 35px;
+    padding: 0px 20px;
+}

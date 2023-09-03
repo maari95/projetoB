@@ -1,0 +1,35 @@
+footer{
+    margin-top: 100px;
+    padding: 40px;
+    box-sizing: border-box;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+}
+
+p{
+    font-size:18px ;
+}
+
+input{
+    width: 350px;
+    height: 35px;
+    padding: 0px 20px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+}
+
+button{
+    margin-left: 10px;
+    border: none;
+    background-color: white;
+    font-size: 18px;
+    width: 150px;
+    height: 35px;
+    transition: background-color 0.3s ease-out;
+}
+
+button:hover{
+    background-color: rgb(143, 143, 143);
+}

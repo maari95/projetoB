@@ -1,0 +1,15 @@
+<div class="janela">
+    <div class="container">
+        <form>
+            <h1>Crie sua publicação</h1>
+            <div class="imagem">
+                <img [src]="imageUrl" alt="Publicação" *ngIf="imageUrl">
+            </div>
+            <input type="file" (change)="previewImage($event)" style="display: none;margin-left: 20%;" #fileInput>
+            <input type="text" name="titulo" placeholder="De um título a sua publicação">
+            <textarea name="pub" rows="5" placeholder="publicação..."></textarea>
+            <button type="button" (click)="fileInput.click()" class="custom-button">Selecionar Imagem</button>
+            <button class="primary">Publicar</button>
+        </form>
+    </div>
+</div>
