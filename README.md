@@ -1,11 +1,12 @@
 # Projeto Blog     <img src="https://cdn1.iconfinder.com/data/icons/social-media-2057/128/1-21-256.png" width="30px" height="30px">
 
-Equipe de Projeto : 
-###### @Gxbriellp : Gabriel Bernardo 
-###### @Viera-JP : João Pedro Vieira
-###### @maari95  : Marina Gomes 
-###### @stephaniefv : Stephanie Ferreira
-###### @Jeffersonm06 : Welligton Alexandre
+Equipe de Projeto: 
+
+#### <a href="https://github.com/Gxbriellp"> Gabriel Bernardo </a>
+#### <a href="https://github.com/Viera-JP"> João Pedro</a>
+#### <a href="https://github.com/maari95"> Marina Gomes</a>
+#### <a href="https://github.com/stephaniefv"> Stephanie Ferreira</a>
+#### <a href="https://github.com/Jeffersonm06">Welligton Alexandre</a>
 
 #
 
