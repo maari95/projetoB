@@ -17,6 +17,8 @@ import { configuracao } from './configuracao';
 import { LoginComponent } from './page/login/login.component';
 
 import { FormsModule } from '@angular/forms';
+import { SobreComponent } from './page/sobre/sobre.component';
+
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { FormsModule } from '@angular/forms';
     RodapeComponent,
     EnvioComponent,
     NoticiasComponent,
-    LoginComponent
+    LoginComponent,
+    SobreComponent,
+        
   ],
   imports: [
     BrowserModule,
