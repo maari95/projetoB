@@ -1,6 +1,7 @@
 .container {
     display: flex;
     justify-content: center;
+    
 }
 
 h1{
@@ -68,4 +69,7 @@ textarea {
     border-radius: 5px;
     width: 200px;
     height: 35px;
+}
+janela{
+    margin-top: 5rem;
 }
