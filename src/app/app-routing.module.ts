@@ -12,9 +12,9 @@ import { SobreComponent } from './page/sobre/sobre.component';
 const routes: Routes = [
   {path:'', component:HomeComponent},
   {path:'login', component:LoginComponent},
-  {path:'enviar', component:EnvioComponent, canActivate:[AuthgardService]},
-  {path:'noticias', component:NoticiasComponent, canActivate:[AuthgardService]},
-  {path: 'sobre', component:SobreComponent, canActivate:[AuthgardService]}
+  {path:'enviar', component:EnvioComponent,/*  canActivate:[AuthgardService] */},
+  {path:'noticias', component:NoticiasComponent,/*  canActivate:[AuthgardService] */},
+  {path: 'sobre', component:SobreComponent,/*  canActivate:[AuthgardService] */}
 
 ];
 

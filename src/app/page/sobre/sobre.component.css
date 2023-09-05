@@ -1,0 +1,145 @@
+section {
+width: 100%;
+}
+.word{
+    
+    height: 700px;
+    padding: 70px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.parte1,.parte2{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: center;
+
+}
+.parte2 h1{
+    font-size: 40px;
+    
+}
+.parte2 p{
+    font-size: 20px;
+}
+.parte2 button{
+    height: 45px;
+    font-size: 20px;
+}
+.programas{
+    background-color: rgb(234, 233, 233);
+    padding: 70px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 40px;
+}
+.programas img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: calc(50% - 50px);
+    margin-top: -50px;
+
+
+}
+.cursos {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+   
+    width: 70%; 
+   
+}
+.cursos article{
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 20px;
+    position: relative;
+    height: 150px;
+    margin-bottom: 60px;
+}
+.linha1, .linha2{
+display: flex;
+flex-direction: row;
+
+}
+article p{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 20px;
+
+}
+.historia{
+    padding: 70px;
+    box-sizing: border-box;
+}
+.card-group{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+
+
+}
+.cards{
+    margin: 10px;
+    width: 400px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 70px;
+    border-radius: 20px;
+
+}
+.dp {
+    padding: 70px;
+    box-sizing: border-box;
+
+}
+.grupo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.alunos{
+    width: 400px;
+    height: 300px;
+   
+    padding: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 15px;
+}
+.alunos img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.perfil{
+    display: flex;
+}
+
+.sobre{
+    margin-left: 20px;
+}
+.primary{
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    margin-left: calc(50% - 150px);
+}
