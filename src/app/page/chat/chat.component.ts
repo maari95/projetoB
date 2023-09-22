@@ -5,8 +5,8 @@ import { ChatService } from 'src/app/model/chat.service';
 
 @Component({
   selector: 'app-chat',
-  templateUrl: 'chat.component.html',
-  styleUrls: ['chat.component.css']
+  templateUrl: './chat.component.html',
+  styleUrls: ['./chat.component.css']
 })
 export class ChatComponent {
   chatMessages: Observable<any[]>;

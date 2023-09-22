@@ -18,7 +18,7 @@
         <input [(ngModel)]="userName" required id="userName" />
     </div>
 
-    <main>
+    <div>
         <!-- Lista de mensagens do chat -->
         <ul>
             <li *ngFor="let message of chatMessages | async">
@@ -33,7 +33,7 @@
                 </div>
             </li>
         </ul>
-    </main>
+    </div>
 
     <!-- Caixa de entrada de mensagem e botão de envio -->
     <footer>
