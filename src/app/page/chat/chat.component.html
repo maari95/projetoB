@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat em Tempo Real</title>
+</head>
+<body>
+    <header>
+        
+            <h1>Chat em Tempo Real</h1>
+        
+    </header>
+
+    <!-- Campo de entrada para o nome do usuário -->
+    <div>
+        <label for="userName">Seu Nome</label>
+        <input [(ngModel)]="userName" required id="userName" />
+    </div>
+
+    <main>
+        <!-- Lista de mensagens do chat -->
+        <ul>
+            <li *ngFor="let message of chatMessages | async">
+                <div [ngClass]="{
+                    'message-box': true,
+                    'user-message': message.senderName === userName,
+                    'other-user-message-1': message.senderName !== userName && message.senderName !== 'SenderName1',
+                    'other-user-message-2': message.senderName !== userName && message.senderName !== 'SenderName2'
+                }">
+                    {{ message.senderName }}: {{ message.text }}
+                    <span>{{ message.timestamp | date:'short' }}</span>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <!-- Caixa de entrada de mensagem e botão de envio -->
+    <footer>
+        <div>
+            <input [(ngModel)]="newMessage" placeholder="Digite uma mensagem" />
+            <button (click)="sendMessage()">Enviar</button>
+        </div>
+    </footer>
+</body>
+</html>
