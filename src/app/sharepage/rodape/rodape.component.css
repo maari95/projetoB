@@ -23,13 +23,15 @@ input{
 button{
     margin-left: 10px;
     border: none;
-    background-color: white;
+    background-color: #F79540;
+    color: white;
     font-size: 18px;
     width: 150px;
     height: 35px;
     transition: background-color 0.3s ease-out;
+    border-radius: 10px;
 }
 
 button:hover{
-    background-color: rgb(143, 143, 143);
+    background-color: #B71375;
 }
