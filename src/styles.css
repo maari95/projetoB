@@ -18,16 +18,18 @@ body {
 
 .primary {
     color: aliceblue;
-    background-color: #1450A3;
+    background-color: #8B1874;
 }
 
 button.primary{
     border: none;
     transition: background-color 0.1s ease-in-out;
+    border-radius: 10px;
 }
 
 button.primary:hover {
-    background-color: #15407c;
+    background-color: #FC4F00;
+    border-radius: 10px;
     
 }
 
