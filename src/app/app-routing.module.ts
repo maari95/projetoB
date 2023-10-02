@@ -6,7 +6,7 @@ import { EnvioComponent } from './page/envio/envio.component';
 import { NoticiasComponent } from './page/noticias/noticias.component';
 import { AuthgardService } from './model/authgard.service';
 import { SobreComponent } from './page/sobre/sobre.component';
-import { ChatComponent } from './page/chat/chat.component';
+
 
 
 
@@ -16,7 +16,6 @@ const routes: Routes = [
   {path:'enviar', component:EnvioComponent,/*  canActivate:[AuthgardService] */},
   {path:'noticias', component:NoticiasComponent,/*  canActivate:[AuthgardService] */},
   {path: 'sobre', component:SobreComponent,/*  canActivate:[AuthgardService] */},
-  {path: 'chat', component:ChatComponent,/*  canActivate:[AuthgardService] */}
 
 ];
 

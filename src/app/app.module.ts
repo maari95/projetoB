@@ -18,7 +18,6 @@ import { LoginComponent } from './page/login/login.component';
 
 import { FormsModule } from '@angular/forms';
 import { SobreComponent } from './page/sobre/sobre.component';
-import { ChatComponent } from './page/chat/chat.component';
 
 
 
@@ -31,8 +30,8 @@ import { ChatComponent } from './page/chat/chat.component';
     EnvioComponent,
     NoticiasComponent,
     LoginComponent,
-    SobreComponent,
-    ChatComponent
+    SobreComponent
+
     
         
   ],
