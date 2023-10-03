@@ -1,9 +1,7 @@
 form{
     width: 400px;
-    margin-left: calc(50% - 210px);
     height: auto;
     padding: 20px;
-    margin-top: 150px;
     box-sizing: border-box;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;

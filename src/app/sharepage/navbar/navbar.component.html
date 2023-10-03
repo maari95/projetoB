@@ -5,13 +5,13 @@
     </div>
     <div class="links">
       <a routerLink="/">Home</a>
-      <a routerLink="/noticias">Notícias</a>
+      <a routerLink="/faq">FAQ</a>
       <a routerLink="/enviar">Enviar Post</a>
       <a routerLink="/sobre">Sobre</a>
+      <a routerLink="/perfil">Perfil</a>
     </div>
-    <ul class="no-bullet">
-      <li *ngIf="!isLoggedIn"><a (click)="toggleLogin()" routerLink="/login">Login</a></li>
-      <li *ngIf="isLoggedIn"><a (click)="toggleLogin()" routerLink="/login">Sair</a></li>
+    <ul class="no-bullet center">
+      <li class="center" *ngIf="!isLoggedIn"><a (click)="toggleLogin()" routerLink="/login">Login</a></li>
+      <li class="center" *ngIf="isLoggedIn"><a (click)="toggleLogin()" routerLink="/login">Sair</a></li>
     </ul>
   </nav>
-  

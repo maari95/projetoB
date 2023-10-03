@@ -10,7 +10,6 @@ import { HomeComponent } from './page/home/home.component';
 import { RodapeComponent } from './sharepage/rodape/rodape.component';
 import { EnvioComponent } from './page/envio/envio.component';
 
-import { NoticiasComponent } from './page/noticias/noticias.component';
 import {AngularFireModule} from '@angular/fire/compat';
 
 import { configuracao } from './configuracao';
@@ -18,6 +17,9 @@ import { LoginComponent } from './page/login/login.component';
 
 import { FormsModule } from '@angular/forms';
 import { SobreComponent } from './page/sobre/sobre.component';
+import { PerfilComponent } from './page/perfil/perfil.component';
+import { FaqComponent } from './page/faq/faq.component';
+import { CadastroComponent } from './page/cadastro/cadastro.component';
 
 
 
@@ -28,19 +30,18 @@ import { SobreComponent } from './page/sobre/sobre.component';
     HomeComponent,
     RodapeComponent,
     EnvioComponent,
-    NoticiasComponent,
     LoginComponent,
-    SobreComponent
-
-    
-        
+    SobreComponent,
+    PerfilComponent,
+    FaqComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(configuracao),
     FormsModule
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

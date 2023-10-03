@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
     // Movendo o carrossel a cada 3 segundos
     setInterval(() => {
       this.moveCarousel();
-    }, 3000);
+    }, 3500);
   }
 
   moveCarousel() {

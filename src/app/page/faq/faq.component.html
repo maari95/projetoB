@@ -1,0 +1,24 @@
+<div class="janela">
+  <div class="content">
+    <div class="list">
+      <div class="container" *ngFor="let group of faqGroups">
+        <div class="item-d">
+          <p class="lb" style="font-size: 20px; margin-top: 25px;">{{ group.title }}</p>
+        </div>
+        <div class="container" *ngFor="let item of group.items">
+          <div class="item" (click)="toggleAnswer(item)">
+            <button class="icon"><i class='bx bx-chevron-down'></i></button>
+            <p class="lb">{{ item.question }}</p>
+          </div>
+
+          <div class="resposta" *ngIf="item.expanded">
+            <strong>
+              <p>{{ item.answer }}</p>
+            </strong>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

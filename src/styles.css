@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+
+:root{
+  --primary:#a71b8b;
+  --primary-hover-light:#c022a0;
+  --primary-hover-dark:#8B1874;
+  --success: #2dd36f;
+  --success-hover-light: #42d77d;
+  --success-hover-dark: #28ba62;
+  --alert:#F79540;
+  --alert-hover-light:#fca355;
+  --alert-hover-dark:#cc7d38;
+}
+
 * {
     font-family: 'Roboto', sans-serif;
 }
@@ -18,7 +31,7 @@ body {
 
 .primary {
     color: aliceblue;
-    background-color: #8B1874;
+    background-color: var(--primary);
 }
 
 button.primary{
@@ -28,15 +41,13 @@ button.primary{
 }
 
 button.primary:hover {
-    background-color: #FC4F00;
-    border-radius: 10px;
-    
+    background-color: var(--primary-hover-light);
 }
 
 .janela {
     position: relative;
     width: 100%;
-    margin-top: 80px;
+    min-height: calc(100% - 355px);
 }
 
 .container {
@@ -46,16 +57,10 @@ button.primary:hover {
     box-sizing: border-box;
 }
 
-.left {
-    left: 0;
-}
-
-.right {
-    right: 0;
-}
-
-.top {
-    top: 0;
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button{

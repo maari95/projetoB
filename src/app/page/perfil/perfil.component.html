@@ -1,0 +1,24 @@
+<div class="janela center">
+  <img src="assets/fundo.gif" alt="" class="back">
+
+  <div class="container">
+    <h1>Meu perfil</h1>
+    <div class="content" *ngFor="let n of nomes">
+      <div class="lista" *ngIf="!n.editando">
+        <p class="linha">{{n.nome}}</p>
+        <p class="linha">{{n.bio}}</p>
+        <p class="linha">{{n.email}}</p>
+        <button class="primary" (click)="n.editando = true">Alterar Dados</button>
+      </div>
+      <div class="lista" *ngIf="n.editando">
+        <label for="nome">Nome</label>
+        <input id="nome" [(ngModel)]="n.nome" name="nome">
+        <label>Bio</label>
+        <textarea [(ngModel)]="n.bio" name="bio" placeholder="Sobre você"></textarea>
+        <label for="email">E-mail</label>
+        <input type="text" id="email" placeholder="email">
+        <button class="primary" (click)="atualizarNome(n)">Salvar alterações</button>
+      </div>
+    </div>
+  </div>
+</div>
