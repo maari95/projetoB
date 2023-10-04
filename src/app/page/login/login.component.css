@@ -1,26 +1,101 @@
-form{
-    width: 400px;
-    height: auto;
-    padding: 20px;
-    box-sizing: border-box;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.background {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  
+  align-items: center;
 }
 
-input{
-    margin-top: 20px;
-    width: 100%;
-    height: 35px;
-    outline: none;
-    background-color: white;
-    border: solid 1px rgba(0, 0, 0, 0.486);
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+.back{
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
-button{
-    width: 100%;
-    height: 35px;
-    margin-top: 20px;
+.card {
+  margin-top: 40%;
+  background: transparent;
+  backdrop-filter: blur(2rem);
+  box-shadow: 0 5px 10px var(--primary);
+  border-radius: 30px;
+  text-align: center;
+  height: auto;
+}
+
+
+
+.logo {
+
+  width: 250px;
+  margin: 20px;
+}
+
+.text {
+  width: 90%;
+  height: 70%;
+  border-radius: 30px;
+  background-color: aliceblue;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item {
+  margin-top: 20px;
+  width: 80%;
+}
+
+input {
+  padding: 20px;
+  margin-top: 5px;
+  border: none;
+  width: 100%;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.367);
+  outline: none;
+  background: none;
+}
+
+p {
+  margin: 20px;
+  color: aliceblue;
+  font-size: 16px;
+  max-width: 80%;
+}
+
+.button {
+  font-size: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 40%;
+  background-color: #a71d8b;
+  color: white;
+  padding: 10px 20px;
+ 
+}
+
+
+
+a {
+  color:red;
+}
+
+@media (min-width: 900px) {
+  .login-container {
+    width: 600px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  p {
+    font-size: 20px;
+  }
 }
