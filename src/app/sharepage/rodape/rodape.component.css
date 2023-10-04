@@ -29,7 +29,6 @@ button{
     width: 150px;
     height: 35px;
     transition: background-color 0.2s ease-out;
-    border-radius: 10px;
 }
 
 button:hover{
