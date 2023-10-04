@@ -19,7 +19,30 @@
   height: 100%;
   width: 100%;
 }
+form{
+  background-color: white;
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+input{
+    margin-top: 20px;
+    width: 100%;
+    height: 35px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    outline: none;
+    background-color: white;
+    border: solid 1px rgba(0, 0, 0, 0.486);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
 .card {
   margin-top: 40%;
   background: transparent;
@@ -98,4 +121,14 @@ a {
   p {
     font-size: 20px;
   }
+}
+
+a{
+  margin: 20px;
+  color: var(--primary);
+}
+
+.formulario{
+  padding: 10px;
+  box-sizing: border-box;
 }

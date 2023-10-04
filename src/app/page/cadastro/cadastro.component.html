@@ -1,1 +1,13 @@
-<p>cadastro works!</p>
+<div class="janela center">
+  <div class="formulario primary">
+    <h1 id='titulo'>Cadasrto de usuário</h1>
+    <form>
+      <input type="email" name="email" id="email" placeholder="Insira seu email" [(ngModel)]="email">
+      <input type="password" name="senha" id="senha" placeholder="Insira sua senha" [(ngModel)]="senha">
+      <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Escreva sua bio:"></textarea>
+      <button class="primary" (click)="registrar()">logar</button>
+      <p *ngIf="mensagem">{{ mensagem }}</p>
+      <a routerLink="/login">Já tem uma conta?</a>
+    </form>
+  </div>
+</div>
