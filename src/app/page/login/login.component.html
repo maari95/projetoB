@@ -1,10 +1,19 @@
-<div class="janela center">
-  <form>
-    <h1 id='titulo'>Login de Usuário</h1>
-
-    <input type="email" name="email" id="email" placeholder="Insira seu email" [(ngModel)]="email">
-    <input type="password" name="senha" id="senha" placeholder="Insira sua senha" [(ngModel)]="senha">
-    <button class="primary" (click)="login()">logar</button>
-    <p *ngIf="mensagem">{{ mensagem }}</p>
-  </form>
+<div class="janela">
+  <div class="login-container">
+    <div class="card">
+      <img class="logo" src="\assets\logo\6.png" alt="">
+      <div class="card-content text">
+        <div class="item">
+          <input class="input" type="email" [(ngModel)]="email" placeholder="Email">
+        </div>
+        <div class="item">
+          <input class="input" type="password" [(ngModel)]="senha" placeholder="Senha">
+        </div>
+      </div>
+    <button class="button" (click)="login()">Entrar</button>
+    <p>Não possui uma conta?<a [routerLink]="['/cadastro']"> Cadastre-se</a></p>
+    <p *ngIf="mensagem">{{mensagem}}</p>
+    </div>
+  </div>
 </div>
+<img src="/assets/img/Backgorundlogin.jpg" class="back" alt="">
