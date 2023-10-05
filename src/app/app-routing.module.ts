@@ -15,11 +15,14 @@ import { SobreComponent } from './page/sobre/sobre.component';
 const routes: Routes = [
   {path:'', component:HomeComponent},
   {path:'login', component:LoginComponent},
+
   {path:'enviar', component:EnvioComponent,/*  canActivate:[AuthgardService] */},
   {path: 'sobre', component:SobreComponent,/*  canActivate:[AuthgardService] */},
   {path:'faq', component:FaqComponent},
   {path:'perfil', component:PerfilComponent},
   {path:'cadastro', component:CadastroComponent}
+
+
 
 ];
 
