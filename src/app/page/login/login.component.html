@@ -17,16 +17,21 @@
     </div>
  -->
 <div class="janela center">
-  <div class="formulario primary">
-    <img class="logo" src="assets/logo/6.png" alt="">
-    <form>
+  
+    
+ 
+  <form>
+    <img class="logo"src="assets/logo/login.png">
+      <label for="email">E-mail</label>
       <input type="email" name="email" id="email" placeholder="Insira seu email" [(ngModel)]="email">
+      <label for="senha">Senha</label>
       <input type="password" name="senha" id="senha" placeholder="Insira sua senha" [(ngModel)]="senha">
+      <a routerlink="/">Esqueci minha senha</a>
       <button class="primary" (click)="login()">logar</button>
       <p *ngIf="mensagem">{{ mensagem }}</p>
       <a routerLink="/cadastro">Ainda não tem uma conta?</a>
     </form>
-
   </div>
-</div>
+  
+
 <img src="/assets/img/Backgorundlogin.jpg" class="back" alt="">
