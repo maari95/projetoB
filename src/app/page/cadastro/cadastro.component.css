@@ -1,52 +1,81 @@
-form{
-  background-color: white;
-    width: 400px;
-    height: auto;
-    padding: 20px;
-    box-sizing: border-box;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+ .back {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+} 
+
+.formulario{
+    margin-top: 100px;
+    width: 80%;
+    height: 80vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.img-form{
+    width: 35%;
+    height: 100%;
+    background-color: rgba(240, 248, 255, 0.436);
+    backdrop-filter: blur(40px);
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-input{
-    margin-top: 20px;
-    width: 100%;
-    height: 35px;
-    padding: 0 20px;
+form{
+    width: 35%;
+    height: 100%;
+    background-color: rgba(240, 248, 255, 0.679);
+    backdrop-filter: blur(40px);
+    border-radius: 0px 20px 20px 0px;
+    padding: 40px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    font-size: 18px;
+}
+
+p a{
+    color:var(--primary-hover-light);
+}
+
+input{
+    background-color: rgba(240, 248, 255, 0.679);
+    border: none;
     outline: none;
-    background-color: white;
-    border: solid 1px rgba(0, 0, 0, 0.486);
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin: 10px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 10px;
 }
 
 button{
-    width: 100%;
-    height: 35px;
-    margin-top: 20px;
+    margin-top: 30px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    font-size: 20px;
 }
 
-a{
-  margin: 20px;
-  color: var(--primary);
+input:focus{
+    box-shadow: rgba(228, 72, 255, 0.24) 0px 3px 8px;
+    border: var(--primary-hover-light) 2px solid;
 }
 
-.formulario{
-  margin-top: 100px;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-h1{
-  margin-left: 20px;
-}
-
-textarea{
-  margin-top: 20px;
-  resize: none;
-  margin: 10px;
-  width: 100%;
-  height: 50px;
+button:hover{
+    box-shadow: rgba(226, 25, 244, 0.25) 0px 54px 55px, rgba(255, 4, 226, 0.12) 0px -12px 30px, rgba(230, 134, 134, 0.12) 0px 4px 6px, rgba(176, 44, 252, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }

@@ -28,13 +28,14 @@ export class CadastroComponent {
         const result = await this.service.cadastrar(this.email, this.senha);
 
         console.log('Usuário Cadastrado');
-        this.router.navigate(['/login']);
+        
       } catch (error) {
         console.error('Erro ao cadastrar usuário', error);
       }
     } else {
       console.log('error');
     }
+    this.router.navigate(['/login']);
   }
 
   // salvarNomeUsuario(){

@@ -1,13 +1,22 @@
+
+<img src="/assets/img/Backgorundlogin.jpg" class="back">
 <div class="janela center">
-  <div class="formulario primary">
-    <h1 id='titulo'>Cadasrto de usuário</h1>
-    <form>
-      <input type="email" name="email" id="email" placeholder="Insira seu email" [(ngModel)]="email">
-      <input type="password" name="senha" id="senha" placeholder="Insira sua senha" [(ngModel)]="senha">
-      <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Escreva sua bio:"></textarea>
-      <button class="primary" (click)="registrar()">logar</button>
-      <p *ngIf="mensagem">{{ mensagem }}</p>
-      <a routerLink="/login">Já tem uma conta?</a>
-    </form>
-  </div>
+    <div class="formulario">
+        <div class="img-form">
+            <img src="assets/img/img-formulario.png" alt="" srcset="">
+        </div>
+        <form>
+            <h1>Criar Conta</h1>
+            <p>Já tem uma conta? <a routerLink="/login">Login</a></p>
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo">
+            <label for="email">E-mail</label>
+            <input type="text" name="email" id="email" placeholder="Digite seu email">
+            <label for="senha">Senha</label>
+            <input type="text" name="senha" id="senha" placeholder="Digite sua senha">
+            <label for="confSenha">Confirma Senha</label>
+            <input type="text" name="confSenha" id="confSenha" placeholder="Confirme sua senha">
+            <button class="primary" (click)="registrar()" type="button">Cadastrar</button>
+          </form>
+    </div>
 </div>
