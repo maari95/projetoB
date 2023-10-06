@@ -9,12 +9,16 @@ h1{
 }
 
 .formulario{
-  padding: 10px;
+  padding: 50px;
   box-sizing: border-box;
+  background-color: rgba(240, 248, 255, 0.167);
+  border-radius: 20px;
+  
 }
 
 form {
-  background-color: white;
+    border-radius: 20px;
+    background-color: rgba(240, 248, 255, 0.679);
     width: 500px;
     height: auto;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -26,6 +30,7 @@ form {
 }
 
 input {
+    background-color: rgba(240, 248, 255, 0.679);
     outline: none;
     border: solid 1px rgba(0, 0, 0, 0.486);
     padding: 0px 10px;
@@ -34,6 +39,7 @@ input {
 }
 
 textarea {
+    background-color: rgba(240, 248, 255, 0.679);
     margin-top: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     resize: none;
@@ -63,6 +69,35 @@ button.primary{
 }
 
 button i{
-  font-size: 20px;
-  margin-right: 10px;
+   font-size:  20px;
+   margin-right: 10px;
 }
+
+.back{
+    position:fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+input:focus{
+    box-shadow: rgba(228, 72, 255, 0.24) 0px 3px 8px;
+    border: var(--primary-hover-light) 2px solid;
+  }
+  
+  button:hover{
+    box-shadow: rgba(226, 25, 244, 0.25) 0px 54px 55px, rgba(255, 4, 226, 0.12) 0px -12px 30px, rgba(230, 134, 134, 0.12) 0px 4px 6px, rgba(176, 44, 252, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  a{
+  margin-top: 10px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  
+  }
+  textarea:focus{
+    box-shadow: rgba(228, 72, 255, 0.24) 0px 3px 8px;
+    border: var(--primary-hover-light) 2px solid;
+  }

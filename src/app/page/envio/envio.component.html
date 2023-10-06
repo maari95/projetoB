@@ -1,7 +1,7 @@
 <div class="janela center">
   <div class="container">
-    <div class="formulario primary">
-      <h1>Crie sua publicação</h1>
+    <div class="formulario ">
+      <img class="post"src="assets/img/post.png">
       <form>
 
         <input type="file" (change)="previewImage($event)" style="display: none;margin-left: 20%;" #fileInput>
@@ -17,3 +17,4 @@
 <div class="imagem">
   <img [src]="imageUrl" alt="Publicação" *ngIf="imageUrl">
 </div>
+<img class="back" src="/assets/img/Backgorundlogin.jpg">

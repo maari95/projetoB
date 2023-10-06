@@ -7,8 +7,10 @@
         </div>
         <div class="container" *ngFor="let item of group.items">
           <div class="item" (click)="toggleAnswer(item)">
-            <button class="icon"><i class='bx bx-chevron-down'></i></button>
+            <!--  <button class="icon"><i class='bx bx-chevron-down'></i></button> -->
             <p class="lb">{{ item.question }}</p>
+            <i *ngIf="item.expanded" class="bx bx-chevron-up"></i>
+            <i *ngIf="!item.expanded" class="bx bx-chevron-down"></i>
           </div>
 
           <div class="resposta" *ngIf="item.expanded">
