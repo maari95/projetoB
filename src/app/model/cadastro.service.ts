@@ -43,8 +43,9 @@ export class CadastroService {
   }
 
   logout() {
-    localStorage.removeItem('token')
-    localStorage.removeItem('expiracao')
+    localStorage.removeItem('token');
+    localStorage.removeItem('expiracao');
+    localStorage.removeItem('id');
     return this.fireAuth.signOut();
   }
 

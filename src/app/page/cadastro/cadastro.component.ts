@@ -15,7 +15,7 @@ export class CadastroComponent {
   mensagem: string = '';
   // bio: string='';
 
-  constructor(private service: CadastroService, private router: Router, /* private ActionSheetCtrl: ActionSheetController,  */private firedata: AngularFireDatabase) { }
+  constructor(private service: CadastroService, private router: Router, private firedata: AngularFireDatabase) { }
 
   ngOnInit() {
   }
@@ -39,9 +39,4 @@ export class CadastroComponent {
     this.router.navigate(['/login']);
   }
 
-  // salvarNomeUsuario(){
-  //   if(this.nome.trim() !== ''){
-  //     localStorage.setItem('user', this.nome);
-  //   }
-  // }
 }
