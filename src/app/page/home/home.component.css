@@ -44,9 +44,10 @@
 
   }
   .content .text-box p{
-    font-size: 1.2em;
+    font-size: 1.8em;
     color: aliceblue;
-    max-width: 900px;
+    max-width: 890px;
+    font-family: 'Garet', sans-serif;
   }
   .content .img-box{
     width: 600px;
