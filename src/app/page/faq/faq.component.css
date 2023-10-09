@@ -1,3 +1,39 @@
+.janela{
+  align-items: center;
+  justify-content: center;
+  display: contents;
+
+  background: linear-gradient(300deg,#8b1874,#020101,#901a78);
+  animation: gradient-animation 27s ease infinite;
+  height: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  display: flex;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.content{
+  width: 80%;
+  height: auto;
+  border-radius: 30px;
+  padding: 50px;
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+.container{
+  background-color: aliceblue;
+  border-radius: 30px;
+}
 .faq-item {
   max-height: 0;
   overflow: hidden;
@@ -11,12 +47,14 @@
 }
 
 .lb {
+  max-width: 70%;
   cursor: pointer;
   font-weight: bold;
   font-size: 18px;
   color: #333;
   padding: 10px;
   margin-bottom: 10px;
+  display: flex;
 }
 
 .faq-item.active {
@@ -30,14 +68,19 @@
 
 
 .bx {
+  position: relative;
   font-size: 15px;
   background-color: #8B1874;
   color: #fff;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 2px;
+  border-radius: 10px;
+  width: 30px!important;
+  height: 30px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: background-color 0.3s ease;
-
+  margin: 5px;
+  
 }
 .bx:hover {
   background-color: #B71375;
@@ -48,7 +91,7 @@
 }
 
 .item{
+  justify-content: space-between;
   display: flex;
-  padding: o;
   border-bottom: 1px solid rgba(63, 63, 63, 0.233);
 }

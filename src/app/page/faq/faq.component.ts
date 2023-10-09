@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class FaqComponent {
 
-  public faqGroups = [
+  public faqFundamentos = [
     {
       title: 'Fundamentos',
       items: [
@@ -35,6 +35,9 @@ export class FaqComponent {
       ],
 
     },
+  ];
+
+  public faqMovel=[
     {
       title: 'Móvel',
       items: [
@@ -64,63 +67,62 @@ export class FaqComponent {
       ],
     },
 
-
-   {
-    title: 'Privacidade',
-    items: [
-      {
-        question: "Posso especificar minha própria chave privada?",
-        answer:"Resposta para a pergunta.",
-        expanded:false},
-
-        {question:'Quais dados são coletados pelo app?',
-        answer:'Resposta para a pergunta.' ,
-        expanded : false},
-
-        {
-          question :"Quem pode ver os seus dados pessoais? ",
-          answer:"Resposta para a pergunta.",
-          expanded : false},
-
-          {
-            question:'O que é um token ? ',
-            answer:'Resposta para a pergunta' ,
-            expanded : false},
-
-    ],
-   },
-
-
-  {
-    title: 'Conta',
-    items: [
-      {
-        question: 'Como excluo minha senha?',
-        answer:'Resposta para a pergunta. 1',
-        expanded:false},
-
-        {
-          question: 'Como alterar o meu nome de usuário?',
-          answer:'Resposta para a pergunta .2',
-          expanded:false,
-        },
-        {
-          question: 'Como mudar minhas configurações da conta?',
-          answer:'Resposta para a pergunta .3',
-          expanded:false
-        },
-        {
-          question: 'Como desativar minha conta?',
-          answer:'Resposta para a pergunta.',
-          expanded:false
-        }
-    ],
-
-  }
-
   ];
 
+  public faqPrivacidade=[
+    {
+      title: 'Privacidade',
+      items: [
+        {
+          question: "Posso especificar minha própria chave privada?",
+          answer:"Resposta para a pergunta.",
+          expanded:false},
+  
+          {question:'Quais dados são coletados pelo app?',
+          answer:'Resposta para a pergunta.' ,
+          expanded : false},
+  
+          {
+            question :"Quem pode ver os seus dados pessoais? ",
+            answer:"Resposta para a pergunta.",
+            expanded : false},
+  
+            {
+              question:'O que é um token ? ',
+              answer:'Resposta para a pergunta' ,
+              expanded : false},
+  
+      ],
+     },  
+  ];
 
+  public faqConta=[
+    {
+      title: 'Conta',
+      items: [
+        {
+          question: 'Como excluo minha senha?',
+          answer:'Resposta para a pergunta. 1',
+          expanded:false},
+  
+          {
+            question: 'Como alterar o meu nome de usuário?',
+            answer:'Resposta para a pergunta .2',
+            expanded:false,
+          },
+          {
+            question: 'Como mudar minhas configurações da conta?',
+            answer:'Resposta para a pergunta .3',
+            expanded:false
+          },
+          {
+            question: 'Como desativar minha conta?',
+            answer:'Resposta para a pergunta.',
+            expanded:false
+          }
+      ],
+     },  
+  ];
 
 
   toggleAnswer(item: { expanded: boolean; }) {
