@@ -20,13 +20,13 @@ export class LoginComponent {
   login(){
     if(this.email && this.senha){
       this.service.login(this.email,this.senha).then(
-        result => {
+        (        result: { user: any; }) => {
           this.tokenService.enviarToken(this.email)
           console.log('Usuario logado', result.user)
           this.router.navigate(['/'])
         }
       ).catch(
-        error => {
+        (        error: any) => {
           console.log('Erro ao fazer login',error);
           this.mensagem="Erro ao fazer login. Verifique suas credenciais"
         }
