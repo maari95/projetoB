@@ -1,8 +1,8 @@
 .janela{
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   display: contents;
-
+  padding-top: 70px;
   background: linear-gradient(300deg,#8b1874,#020101,#901a78);
   animation: gradient-animation 27s ease infinite;
   height: 100%;
@@ -25,6 +25,8 @@
 .content{
   width: 80%;
   height: auto;
+  margin-bottom: 40px;
+
   border-radius: 30px;
   padding: 50px;
   box-sizing: border-box;

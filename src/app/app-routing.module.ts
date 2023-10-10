@@ -18,9 +18,9 @@ const routes: Routes = [
   {path:'login', component:LoginComponent},
 
   {path:'enviar', component:EnvioComponent, canActivate:[AuthgardService] },
-  {path: 'sobre', component:SobreComponent,  canActivate:[AuthgardService] },
+  {path: 'sobre', component:SobreComponent},
   {path:'faq', component:FaqComponent},
-  {path:'perfil', component:PerfilComponent},
+  {path:'perfil', component:PerfilComponent, canActivate:[AuthgardService]},
   {path:'cadastro', component:CadastroComponent}
 
 
