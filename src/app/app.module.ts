@@ -20,8 +20,12 @@ import { SobreComponent } from './page/sobre/sobre.component';
 import { PerfilComponent } from './page/perfil/perfil.component';
 import { FaqComponent } from './page/faq/faq.component';
 import { CadastroComponent } from './page/cadastro/cadastro.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ModalComponent } from './modal/modal.component';
 
-
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatButtonModule} from '@angular/material/button'
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -34,13 +38,20 @@ import { CadastroComponent } from './page/cadastro/cadastro.component';
     SobreComponent,
     PerfilComponent,
     FaqComponent,
-    CadastroComponent
+    CadastroComponent,
+    ModalComponent
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(configuracao),
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatDialogModule, 
+    MatButtonModule, 
+    MatIconModule,
+    
 
   ],
   providers: [],

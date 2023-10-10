@@ -7,10 +7,12 @@
       <a routerLink="/faq">FAQ</a>
       <a routerLink="/enviar">Enviar Post</a>
       <a routerLink="/sobre">Sobre</a>
-      <!-- <a routerLink="/perfil">Perfil</a> -->
+       <a routerLink="/perfil">Perfil</a> 
     </div>
-    <!-- <ul class="no-bullet center">
-      <li class="center" *ngIf="!isLoggedIn"><a (click)="toggleLogin()" routerLink="/login">Login</a></li>
-      <li class="center" *ngIf="isLoggedIn"><a (click)="toggleLogin()" routerLink="/login">Sair</a></li>
-    </ul> -->
+     <ul class="no-bullet center">
+      <li class="center" *ngIf="!isLoggedIn"> 
+        <a (click)="toggleLogin()" routerLink="/login">Login</a></li>
+        <li *ngIf="isLoggedIn">
+          <a (click)="logout()" routerLink="/login">Sair</a></li>
+    </ul> 
   </nav>

@@ -7,21 +7,25 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class PerfilService {
+  
+  user: any;
 
-    user:any;
+  constructor(
+    private afAuth: AngularFireAuth,
+    private afDatabase: AngularFireDatabase,
+  ) {}
 
-  constructor( private afAuth: AngularFireAuth,
-    private afDatabase: AngularFireDatabase,) { }
+  // ... Outros métodos existentes ...
+  getUserId() {
+   /*  return this.user ? this.user.id: ''; */
+   return localStorage.getItem('id');
+  
+  }
 
-    getUserId() {
-      /*  return this.user ? this.user.id: ''; */
-      return localStorage.getItem('id');
-     }
-
-     
   getAllUserData(uid: string): Observable<any> {
     return this.afDatabase.object(`usuarios/${uid}`).valueChanges();
   }
+
 
   async editarPerfilUsuario(
     nomeUsuario: string,
@@ -39,6 +43,7 @@ export class PerfilService {
           bio: bio,
           email: email
         });
+       
 
         // Atualize também os dados do usuário localmente (opcional)
         /* if (this.user) {

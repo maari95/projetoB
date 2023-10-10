@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './page/home/home.component';
 import { LoginComponent } from './page/login/login.component';
 import { EnvioComponent } from './page/envio/envio.component';
+
 import { AuthgardService } from './model/authgard.service';
 import { SobreComponent } from './page/sobre/sobre.component';
 
@@ -16,8 +17,8 @@ const routes: Routes = [
   {path:'', component:HomeComponent},
   {path:'login', component:LoginComponent},
 
-  {path:'enviar', component:EnvioComponent,/*  canActivate:[AuthgardService] */},
-  {path: 'sobre', component:SobreComponent,/*  canActivate:[AuthgardService] */},
+  {path:'enviar', component:EnvioComponent, canActivate:[AuthgardService] },
+  {path: 'sobre', component:SobreComponent,  canActivate:[AuthgardService] },
   {path:'faq', component:FaqComponent},
   {path:'perfil', component:PerfilComponent},
   {path:'cadastro', component:CadastroComponent}

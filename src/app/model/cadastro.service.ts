@@ -9,8 +9,6 @@ import { Observable } from 'rxjs';
 })
 export class CadastroService {
 
-  nome: string='';
-
   constructor(private fireAuth: AngularFireAuth, private db: AngularFireDatabase) { }
 
   login(email: string, senha: string) {
@@ -22,15 +20,13 @@ export class CadastroService {
       .then((userCredential) => {
         const user = userCredential.user;
         if (user) {
+          
           return this.db.object(`usuarios/${user.uid}`).set({
-            // email: user.email,
-            // nome: nome,
-            // bio: bio,
+           email: email
 
-            // Outros dados do usuário que você deseja salvar
           });
         } else {
-          throw new Error('Falha ao criar a conta de usuário.');
+           throw new Error('Falha ao criar a conta de usuário.');
         }
       });
   }
@@ -43,17 +39,16 @@ export class CadastroService {
   }
 
   logout() {
-    localStorage.removeItem('token');
-    localStorage.removeItem('expiracao');
+    localStorage.removeItem('token')
+    localStorage.removeItem('expiracao')
     localStorage.removeItem('id');
     return this.fireAuth.signOut();
   }
 
-  setUser(user: string){
-    localStorage.setItem('user', user);
-  }
-  getUser(): string | null {
-    return localStorage.getItem('user');
-  }
+  // setUser(user: string){
+  //   localStorage.setItem('user', user);
+  // }
+  // getUser(): string | null {
+  //   return localStorage.getItem('user');
+  // }
 }
-

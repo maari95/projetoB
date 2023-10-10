@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, 
   RouterStateSnapshot, Router } from '@angular/router';
 import { FireLoginService } from './fire-login.service';
+import { AuthService } from './auth.service';
 
 @Injectable({
   providedIn: 'root'
@@ -9,15 +10,16 @@ import { FireLoginService } from './fire-login.service';
 export class AuthgardService implements CanActivate {
 
   constructor(private service: FireLoginService,
-    private router: Router) { }
+    private router: Router, Auth: AuthService) { }
    
-    canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
+    canActivate(route: ActivatedRouteSnapshot,  state: RouterStateSnapshot){
       
       const token = localStorage.getItem('token');
+      
       if (token && this.service.validarToken()) {
         return true;
       } else {
-        this.router.navigate(['login'], { queryParams: { returnUrl: state.url } });
+        this.router.navigate(['/login'], { queryParams: { returnUrl: state.url } });
         return false;
       }
     }

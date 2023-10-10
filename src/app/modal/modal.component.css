@@ -1,0 +1,28 @@
+p, li{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    text-align: justify;
+}
+li{
+    margin-top: 0.75rem;
+}
+ul{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
+button {
+    margin-top: 0.75rem;
+    margin-left: 95%;
+    text-align: end;
+}
+.container{
+    padding: 1.5rem;
+}
+p{
+    line-height: 1.5;
+}
